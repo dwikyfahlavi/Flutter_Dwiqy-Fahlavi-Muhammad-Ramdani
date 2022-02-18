@@ -1,0 +1,7 @@
+# Summary Basic Version and Branch Management (Git)
+
+- Dengan Git, para pengguna GitHub dapat melacak perubahan pada file yang berada dalam **direktori kerja atau repository** sehingga memudahkan kita untuk mengetahui perubahan pada file ataupun source code program.
+
+- Kita dapat bekerja secara tim dan berkolaborasi dengan beberapa orang untuk mengerjakan proyek yang sama. Dalam Git juga, kita dapat membuat cabang (branch) yang berfungsi untuk memisahkan alur kerja (workflow), kita juga bisa melakukan penyatuan hasil kerja atau merge pada masing-masing anggota.
+
+- Commit itu seperti snapshot (cuplikan) dari repository kita pada waktu tertentu dan merupakan salah satu perintah dasar Git untuk menyimpan perubahan setiap file dalam repository di mana perubahan yang telah di-commit akan tersimpan riwayat perubahannya.
