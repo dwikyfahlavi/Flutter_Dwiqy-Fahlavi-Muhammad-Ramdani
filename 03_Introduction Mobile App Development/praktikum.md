@@ -1,14 +1,15 @@
 1. Bahasa Pemrograman Mobile :
-    a. Java (Android)
-    b. Kotlin (Android)
-    c. Swift (IOS)
-    d. Objective - C (IOS)
-    e. Dart (Android, IOS, Desktop, Web)
+    - Java (Android)
+    - Kotlin (Android)
+    - Swift (IOS)
+    - Objective - C (IOS)
+    - Dart (Android, IOS, Desktop, Web)
 2. Aplikasi IOS :
-    a. iMovie
-    b. Flow : Skecth, Draw, Take Notes
-    c. Clubhouse
+    - iMovie
+    - Flow : Skecth, Draw, Take Notes
+    - Clubhouse
+    
    Aplikasi Android :
-    a. Greenify
-    b. Google Play Store
-    c. Google Play Music
+    - Greenify
+    - Google Play Store
+    - Google Play Music
