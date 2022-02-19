@@ -1,0 +1,3 @@
+Dart adalah bahasa pemrograman open source yang dirancang untuk membuat aplikasi agar dapat berjalan dengan cepat. Dart dikembangkan oleh Google yang dirilis pada tahun 2011. Aplikasi yang dibuat dengan dart juga adalah aplikasi yang berjalan disisi client (Frontend), seperti web, dekstop dan mobile.
+Fitur dalam dart antara lain type safe (menjamin konsistensi tipe data), Null safety (memberi keamanan dari data bernilai hampa atau null), rich standard library, multiplatform (mampu berjalan pada berbagai jenis perangkat).
+Fungsi Main adalah bagian yang dijalankan pertama kali, dapat memiliki tipe data seperti biod atau int, biasanya dinamain dengan nama main.
