@@ -1,0 +1,3 @@
+Anonymous Function adalah fungsi yang tidak memiliki data dan juga bisa digunakan sebagai data
+Arrow Function dapat memiliki nama atau tidak tergantung kebutuhan, hanya dapat berisi 1 data ( dari proses maupun data statis), nilai return fungsi yang menggunakan arrow function diambil dari data tersebut.
+Dengan menggunakan Async await kita dapat menjalankan beberapa proses tanpa perlu menunggu proses lainnya selesai, proses ini ditulis dalam bentuk fungsi. Await akan menunggu hingga proses Async selesai.
