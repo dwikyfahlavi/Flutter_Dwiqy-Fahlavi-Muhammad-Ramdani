@@ -1,7 +1,6 @@
 void main() {
   //Soal no 1
   var nilai = 100;
-  String text;
   for (var i = 0; i < 10; i++) {
     // menggunakan for agar dapat mengecek apakah semua kondisi bisa berjalan sesuai keinginan.
     nilai -= 25;
@@ -10,7 +9,6 @@ void main() {
       break;
     }
   }
-
   // Soal no 2
   var a = 10;
   var b = 20;
