@@ -6,7 +6,7 @@ void main() {
     nilai -= 25;
     print('Predikat Anda = ${predikat(nilai)}');
     if (nilai == 0) {
-      break;
+      continue;
     }
   }
   // Soal no 2
