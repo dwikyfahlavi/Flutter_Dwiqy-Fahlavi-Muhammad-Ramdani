@@ -11,8 +11,7 @@ void diagonal(int angka) {
     //printing spaces
     for (int c = 0; c < r; c++) stdout.write(" ");
     // printing number
-    stdout.write('$r');
+    print('$r');
     //taking to the new line
-    print('\n');
   }
 }
