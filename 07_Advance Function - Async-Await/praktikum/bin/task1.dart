@@ -1,7 +1,8 @@
 void main() async {
   List angka = [1, 2, 3, 4];
   List hasil = await multiple(angka, 2);
-  print(hasil);
+  print('List Awal : $angka x 2');
+  print('Hasil Setelah Dikali : $hasil');
 }
 
 Future<List> multiple(List list, int pengali) {

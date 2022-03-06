@@ -11,4 +11,8 @@ void main() {
     student[i[0]] = i[1];
   }
   print(student);
+
+  for (var j in student.keys) {
+    print('$j Berumur ${student[j]}');
+  }
 }
