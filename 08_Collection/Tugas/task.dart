@@ -18,7 +18,11 @@ void main() {
   //task15();
   //task16();
   //task17();
-  task18();
+  //task18();
+  //task19();
+  //task20();
+  //task22();
+  task24();
 }
 
 void task1() {
@@ -150,4 +154,51 @@ void task17() {
 
 void task18() {
   print('Jawaban task 18 : B');
+}
+
+void task19() {
+  List list = [];
+  Map map = {};
+  print(list);
+  print(map);
+}
+
+void task20() {
+  print([1, 'dua', true]);
+}
+
+void task21() {
+  print('List Dynamic');
+}
+
+void task22() {
+  print('{spring: 1, summer: 2, autumn: 3}');
+}
+
+void task23() {
+  print('String untuk Key nya : Integer untuk Valuenya');
+}
+
+void task24() {
+  List list = [1, 2, 3, 4, 5];
+  num hasil = 0;
+  for (var i in list) {
+    hasil = hasil + i;
+  }
+  print(hasil);
+}
+
+void task25(){
+  var restaurants = [
+    {
+      'name' : 'Pizza Mario',
+      'cuisine' : 'Italian',
+      'ratings' : [4.0, 3.5, 4.5],
+    },
+    {
+      'name' : 'Chez',
+      'cuisine' : 'Italian',
+      'ratings' : [4.0, 3.5, 4.5],
+    }
+  ]
 }
