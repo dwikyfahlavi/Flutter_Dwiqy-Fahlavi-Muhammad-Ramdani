@@ -21,8 +21,16 @@ void main() {
   //task18();
   //task19();
   //task20();
+  //task21();
   //task22();
-  task24();
+  //task23();
+  //task24();
+  //task25();
+  //task26();
+  //task27();
+  task28();
+  //task29();
+  //task30();
 }
 
 void task1() {
@@ -188,17 +196,108 @@ void task24() {
   print(hasil);
 }
 
-void task25(){
+void task25() {
   var restaurants = [
     {
-      'name' : 'Pizza Mario',
-      'cuisine' : 'Italian',
-      'ratings' : [4.0, 3.5, 4.5],
+      'name': 'Pizza Mario',
+      'cuisine': 'Italian',
+      'ratings': [4.0, 3.5, 4.5],
     },
     {
-      'name' : 'Chez',
-      'cuisine' : 'Italian',
-      'ratings' : [4.0, 3.5, 4.5],
+      'name': 'Chez',
+      'cuisine': 'Italian',
+      'ratings': [4.0, 3.5, 4.5],
     }
-  ]
+  ];
+  print(restaurants[0]);
+}
+
+void task26() {
+  var restaurants = [
+    {
+      'name': 'Pizza Mario',
+      'cuisine': 'Italian',
+      'ratings': [4.0, 3.5, 4.5],
+    },
+    {
+      'name': 'Chez',
+      'cuisine': 'Italian',
+      'ratings': [4.0, 3.5, 4.5],
+    }
+  ];
+  var newText = {
+    'name': 'Yaahooey',
+    'cuisine': 'Indonesian',
+    'ratings': [4.5, 4.3, 4.0],
+  };
+  restaurants.add(newText);
+  print(restaurants);
+}
+
+void task27() {
+  var restaurants = [
+    {
+      'name': 'Pizza Mario',
+      'cuisine': 'Italian',
+      'ratings': [4.0, 3.5, 4.5],
+    },
+    {
+      'name': 'Chez',
+      'cuisine': 'Italian',
+      'ratings': [4.0, 3.5, 4.5],
+    }
+  ];
+  var newText = {
+    'name': 'Yaahooey',
+    'cuisine': 'Indonesian',
+    'ratings': [4.5, 4.3, 4.0],
+  };
+  restaurants.add(newText);
+
+  for (var i in restaurants) {
+    print(i);
+  }
+}
+
+void task28() {
+//   var restaurants = [
+//     {
+//       'name': 'Pizza Mario',
+//       'cuisine': 'Italian',
+//       'ratings': [4.0, 3.5, 4.5],
+//     },
+//     {
+//       'name': 'Chez',
+//       'cuisine': 'Italian',
+//       'ratings': [4.0, 3.5, 4.5],
+//     }
+//   ];
+//   var newText = {
+//     'name': 'Yaahooey',
+//     'cuisine': 'Indonesian',
+//     'ratings': [4.5, 4.3, 4.0],
+//   };
+//   restaurants.add(newText);
+
+//   for (var i in restaurants) {
+//     average(i['ratings']);
+//   }
+// }
+
+// double average(Object? list) {
+//   num hasil = 0;
+//   for (var i in list) {
+//     hasil = hasil + i;
+//   }
+//   return hasil / lenght;
+}
+
+void task29() {
+  print('hello');
+  print('data berhasil di dapatkan');
+}
+
+void task30() {
+  print('data berhasil di dapatkan');
+  print('hello');
 }
