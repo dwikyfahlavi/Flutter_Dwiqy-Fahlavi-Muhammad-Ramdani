@@ -260,36 +260,36 @@ void task27() {
 }
 
 void task28() {
-//   var restaurants = [
-//     {
-//       'name': 'Pizza Mario',
-//       'cuisine': 'Italian',
-//       'ratings': [4.0, 3.5, 4.5],
-//     },
-//     {
-//       'name': 'Chez',
-//       'cuisine': 'Italian',
-//       'ratings': [4.0, 3.5, 4.5],
-//     }
-//   ];
-//   var newText = {
-//     'name': 'Yaahooey',
-//     'cuisine': 'Indonesian',
-//     'ratings': [4.5, 4.3, 4.0],
-//   };
-//   restaurants.add(newText);
+  var restaurants = [
+    {
+      'name': 'Pizza Mario',
+      'cuisine': 'Italian',
+      'ratings': [4.0, 3.5, 4.5],
+    },
+    {
+      'name': 'Chez',
+      'cuisine': 'Italian',
+      'ratings': [4.0, 3.5, 4.5],
+    }
+  ];
+  var newText = {
+    'name': 'Yaahooey',
+    'cuisine': 'Indonesian',
+    'ratings': [4.5, 4.3, 4.0],
+  };
+  restaurants.add(newText);
 
-//   for (var i in restaurants) {
-//     average(i['ratings']);
-//   }
-// }
+  for (var i in restaurants) {
+    average(i['ratings']);
+  }
+}
 
-// double average(Object? list) {
-//   num hasil = 0;
-//   for (var i in list) {
-//     hasil = hasil + i;
-//   }
-//   return hasil / lenght;
+double average(Object? list) {
+  num hasil = 0;
+  for (var i in list) {
+    hasil = hasil + i;
+  }
+  return hasil / lenght;
 }
 
 void task29() {
