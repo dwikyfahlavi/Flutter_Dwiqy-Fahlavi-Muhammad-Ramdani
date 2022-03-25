@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "praktikum",
+            "cwd": "04_Introduction to Algorithm and Dart Programming\\praktikum",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "praktikum",
+            "cwd": "05_Basic Dart Programming\\praktikum",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "praktikum",
+            "cwd": "06_Branching - Looping - Function\\praktikum",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "praktikum",
+            "cwd": "07_Advance Function - Async-Await\\praktikum",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "praktikum",
+            "cwd": "08_Collection\\praktikum",
+            "request": "launch",
+            "type": "dart"
+        }
+    ]
+}
