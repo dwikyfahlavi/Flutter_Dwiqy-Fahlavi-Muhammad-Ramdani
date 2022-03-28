@@ -1,37 +1,41 @@
-# 12 Flutter Command Line Interface (CLI) and Flutter package management
+# 14 Flutter Layout
 
-## Resume
+## Flutter Layout
 Pada sub materi ini mempelajari:
-1. Flutter CLI
-2. Important CLI Commands 
-3. Package Management
+1. Apa itu Layout
+2. Single Child Layout 
+3. Multi Child Layout
 
-### Flutter CLI
-- Merupakan alat yang digunakan untuk berinteraksi dengan Flutter SDK.
-- Perintah dijalankan dalam terminal
+### Layout
+- Berfungsi untuk mengatuk tata letak
+- layout berbentuk widget yang mengatur widget di dalamnya
 
-### Important CLI Commands 
-Terdapat beberapa macam Command yang sangat penting :
-- Flutter Doctor
-- Flutter Create
-- Flutter Run
-- Flutter Emulator
-- Flutter Channel
-- Flutter Pub
-- Flutter Build
-- Flutter Clean
+### Single Child Layout
+ada beberapa macam single child layout:
+- Container
+- Center
+- Sized Box
 
-### Package Management
-- Flutter mendukung sharing packages
-- Packages dibuat developes lain
-- Mempercepat pengembangan aplikasi karena tidak perlu membuat semuanya dari awal atau from scratch
-- Mendapatkan packages di website pub.dev
+    #### Container
+    - Digunakan untuk membuat sebuah box
+    - biasa digunakan untuk membungkus widget lain
+    - Box tersebut memiliki margin, padding, dan border
 
-    #### Cara Menambahkan Packages
-    - Cari package di pub.dev
-    - Copy baris dependencies yang ada dibagian installing
-    - Buka pubscpec.yaml
-    - Paste barisnya dibawah dependecies pubspec.yaml
-    - Run flutter pub get di terminal
-    - Import package di fule dart agar bisa digunakan
-    - Stop atau restart aplikasi jika dibutuhkan
+    #### Center
+    - Digunakan untuk membuat sebuah box
+    - biasa digunakan untuk membungkus widget lain
+    - memenuhi lebar dan tinggi ruang di luarnya
+    - meletakkan widget berada di bagian tengah
+
+    #### Size Box
+    - Digunakan untuk membuat sebuah box
+    - biasa digunakan untuk membungkus widget lain
+    - Box dapat di atur lebar dan tingginya
+    - Lebih sederhana dari container
+
+### Multi Child Layout
+ada beberapa macam Multi Child Layout di dalam flutter :
+- **Column**, Berfungsi untuk mengatur widgets secara vertikal
+- **Row**, Berfungsi untuk mengatur widgets secara horizontal
+- **ListView**, Berfungsi untuk mengatur widgets dalam bentuk list, dan juga memiliki kemampuas scroll
+- **GridView**, Mengatur widgets dalam bentuk galeri.
