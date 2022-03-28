@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const GeeksForGeeks());
+  runApp(const MyApp());
 }
 
-class GeeksForGeeks extends StatelessWidget {
-  const GeeksForGeeks({Key? key}) : super(key: key);
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
 
 // This widget is the root of your application
   @override
