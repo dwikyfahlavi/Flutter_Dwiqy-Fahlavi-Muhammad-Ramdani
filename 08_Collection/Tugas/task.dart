@@ -284,12 +284,12 @@ void task28() {
   }
 }
 
-double average(Object? list) {
+double average(dynamic list) {
   num hasil = 0;
   for (var i in list) {
     hasil = hasil + i;
   }
-  return hasil / lenght;
+  return hasil / list.lenght;
 }
 
 void task29() {
