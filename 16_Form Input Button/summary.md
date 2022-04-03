@@ -4,29 +4,23 @@
 Pada sub materi ini mempelajari:
 1. Form
 2. Input
-3. Bottom
+3. Button
 
 ### Form
-- Merupakan dialog yang muncul di tengah layar
-- Biasanya dipakai untuk pencegahan suatu aksi apakah aksi tersebut sudah fix atau tidak
-- Contohnya ketika mendelete
-- Membutuhkan helper method showDialog
-- Menggunakan widget AlertDialog
-- Membutuhkan dua properti, *context* dan *builder*
+- Merupakan tempat yang di gunakan untuk menerima isian data dari pengguna
+- Biasanya didalam form didalamnya terdapat lebih dari satu isian data
+- Contohnya ketika kita menginputkan data mahasiswa
+- menggunkan StatefullWidget
+- Form State disimpan menggunakan GlobayKey FormState
 
-### Bottom Sheet
-- Merupakan dialog yang muncul dari bawah layar aplikasi
-- Biasanya dipakai untuk menampilkan profile
-- Membutuhkan helper method showModalBottomSheet
-- Membutuhkan dua properti, *context* dan *builder*
+### Input
+- TextField, berfungsi untuk isian data berupa teks. Biasanya data diambil menggunakan TextEditingController
+- Radio, berfungsi memberi opsi pada pengguna dan pengguna hanya dapat memilih satu opsi
+- CheckBox, sama seperti radio hanya saja checkbox pengguna dapat memilih lebih dari satu opsi
+- DropDown Button, berfungsi seperti radio yang memberi opsi dan hanya dapat memilih satu opsi. perbedaannya hanya tampilan list opsinya
 
-### Contoh Penggunaan 
-
-**Alert Dialog**
-
-<a><img src="https://i.imgur.com/J9oSJos.png" /></a>
-
-**Dialog Bottom Sheet**
-
-<a><img src="https://i.imgur.com/HNwj40f.png" /></a>
+### Button
+Merupakan tombol yang dapat ditekan pengguna dan akan langsung memproses sesuatu.
+- Elevated Button, tombol nya timbul dan jika ditekan akan menjalankan onPressed
+- IconButton, Tombol yang hanya menampilkan icon dan jika ditekan akan menjalankan onPressed
 
