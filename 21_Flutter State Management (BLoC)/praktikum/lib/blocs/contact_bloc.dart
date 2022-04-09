@@ -17,6 +17,11 @@ class ContactBloc extends Bloc<ContactEvent, ContactState> {
       emit(ContactLoaded(listContact));
     });
 
+    on<OnRemoveContact>((event, emit) {
+      listContact.removeAt(event.index);
+      emit(ContactLoaded(listContact));
+    });
+
     /// FOR LOADED
     on<OnFetchContact>((event, emit) async {
       emit(ContactLoading());

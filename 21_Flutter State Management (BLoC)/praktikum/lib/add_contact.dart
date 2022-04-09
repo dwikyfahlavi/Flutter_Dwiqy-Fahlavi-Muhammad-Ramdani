@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:praktikum/blocs/history_bloc.dart' as history;
+import 'package:praktikum/history_model.dart';
 
 import 'blocs/contact_bloc.dart';
 import 'button.dart';
@@ -62,6 +64,15 @@ class _AddContactScreenState extends State<AddContactScreen> {
                             ),
                           ),
                         );
+                    context
+                        .read<history.HistoryBloc>()
+                        .add(history.OnAddHistory(HistoryModel(
+                            const Icon(
+                              Icons.contact_phone,
+                              color: Colors.green,
+                            ),
+                            'Contact dengan nama ${nameCtrl.text} telah di tambahkan',
+                            DateTime.now())));
                     Navigator.pop(context);
                   }
                 },

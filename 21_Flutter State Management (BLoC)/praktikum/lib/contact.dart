@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:praktikum/blocs/history_bloc.dart';
+import 'package:praktikum/history.dart';
+import 'package:praktikum/history_model.dart';
 
 import 'add_contact.dart';
 import 'blocs/contact_bloc.dart';
@@ -24,6 +27,13 @@ class _ContactScreenState extends State<ContactScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Contact"),
+        actions: [
+          IconButton(
+              onPressed: () {
+                Navigator.pushNamed(context, HistoryScreen.routeName);
+              },
+              icon: const Icon(Icons.history))
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
@@ -42,10 +52,9 @@ class _ContactScreenState extends State<ContactScreen> {
             } else if (state is ContactLoaded) {
               return ListView.builder(
                 itemCount: state.contact.length,
-                physics: const BouncingScrollPhysics(),
                 itemBuilder: (ctx, idx) {
                   final data = state.contact[idx];
-                  return _buildWidgetContactTile(data);
+                  return _buildWidgetContactTile(data, idx);
                 },
               );
             } else {
@@ -57,7 +66,7 @@ class _ContactScreenState extends State<ContactScreen> {
     );
   }
 
-  ListTile _buildWidgetContactTile(ContacModel contact) {
+  ListTile _buildWidgetContactTile(ContacModel contact, int index) {
     return ListTile(
       leading: CircleAvatar(
         backgroundColor: Colors.green,
@@ -79,6 +88,45 @@ class _ContactScreenState extends State<ContactScreen> {
           color: Colors.grey,
         ),
       ),
+      trailing: IconButton(
+          onPressed: () {
+            showDialog(
+                context: context,
+                builder: (context) => AlertDialog(
+                      content: const Text(
+                          'Are you sure want to delete this contact?'),
+                      actions: [
+                        TextButton(
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
+                            child: const Text('No')),
+                        TextButton(
+                            onPressed: () {
+                              context
+                                  .read<ContactBloc>()
+                                  .add(OnRemoveContact(index));
+                              context
+                                  .read<HistoryBloc>()
+                                  .add(OnAddHistory(HistoryModel(
+                                      const Icon(
+                                        Icons.contact_phone,
+                                        color: Colors.red,
+                                      ),
+                                      'Contact dengan nama ${contact.name.toString()} berhasil dihapus',
+                                      DateTime.now())));
+                              Navigator.pop(context);
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                    content: Text(
+                                        'Delete ${contact.name.toString()} Successfully!')),
+                              );
+                            },
+                            child: const Text('Yes')),
+                      ],
+                    ));
+          },
+          icon: const Icon(Icons.delete_forever_rounded)),
     );
   }
 }

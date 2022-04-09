@@ -8,4 +8,9 @@ class OnAddContact extends ContactEvent {
   OnAddContact(this.contact);
 }
 
+class OnRemoveContact extends ContactEvent {
+  final int index;
+  OnRemoveContact(this.index);
+}
+
 class OnFetchContact extends ContactEvent {}
