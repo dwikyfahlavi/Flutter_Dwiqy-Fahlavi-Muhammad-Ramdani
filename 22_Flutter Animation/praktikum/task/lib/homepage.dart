@@ -8,7 +8,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  bool isBig = false;
+  bool isBig = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,29 +16,20 @@ class _HomePageState extends State<HomePage> {
         title: const Text('Task 1'),
       ),
       body: Center(
-        child: Column(
-          children: [
-            const SizedBox(
-              height: 10.0,
-            ),
-            ElevatedButton(
-                onPressed: () => {
-                      setState(
-                        () {
-                          isBig = !isBig;
-                        },
-                      ),
-                    },
-                child: const Text('Resize')),
-            Container(
-              padding: const EdgeInsets.all(10.0),
-              width: isBig ? 300 : 500,
-              height: isBig ? 300 : 500,
-              child: const Image(
-                  image: NetworkImage(
-                      'https://www.teahub.io/photos/full/146-1469010_one-piece-family.jpg')),
-            ),
-          ],
+        child: Container(
+          padding: const EdgeInsets.all(10.0),
+          width: isBig ? 200 : 500,
+          height: isBig ? 200 : 500,
+          child: GestureDetector(
+            onTap: (() {
+              setState(() {
+                isBig = !isBig;
+              });
+            }),
+            child: const Image(
+                image: NetworkImage(
+                    'https://www.teahub.io/photos/full/146-1469010_one-piece-family.jpg')),
+          ),
         ),
       ),
     );
