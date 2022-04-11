@@ -16,10 +16,11 @@ class _HomePageState extends State<HomePage> {
         title: const Text('Task 1'),
       ),
       body: Center(
-        child: Container(
+        child: AnimatedContainer(
           padding: const EdgeInsets.all(10.0),
           width: isBig ? 200 : 500,
           height: isBig ? 200 : 500,
+          duration: const Duration(milliseconds: 400),
           child: GestureDetector(
             onTap: (() {
               setState(() {
